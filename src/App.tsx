@@ -14,7 +14,7 @@ function App() {
       <section className='pt-[80px] pb-[50px] md:ml-[50px] h-[100vh] flex items-center'>
         <div className='pl-[50px] pr-[50px] md:grid md:grid-cols-2 flex-1/2'>
           <div>
-            <h1 className='font-capital md:text-[40pt]/[45pt] text-[20pt]/[25pt] font-bold text-white mb-[30px] border-l-1 pl-[20px] md:pt-[50px] pt-[25px] max-w-[600px]'>
+            <h1 className='font-capital md:text-[40pt]/[45pt] text-[20pt]/[25pt] font-bold text-white mb-[30px] border-l-1 pl-[20px] md:pt-[50px] md:pb-[25px] pb-[10px] pt-[25px] max-w-[600px]'>
               HELLO!<br />
               I'M GUILHERME,<br />
               A WEB DEVELOPER
