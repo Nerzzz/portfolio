@@ -11,10 +11,8 @@ function Header() {
             <a href="">
                 <span className='bi bi-instagram text-quote text-[15pt] hover:text-white duration-[250ms]'></span>
             </a>
-            <button className="flex w-[25px] h-[25px] items-center justify-center bg-transparent cursor-pointer ml-[-2px]">
-                <span className='bi bi-globe-americas text-quote text-[15pt] hover:text-white duration-[250ms]'>
-                    <span className="bi bi-caret-down-fill absolute text-[8pt] ml-[1px]"></span>
-                </span>
+            <button className="flex w-[25px] h-[25px] items-center justify-center bg-transparent cursor-pointer">
+                <span className='bi bi-globe-americas text-quote text-[15pt] hover:text-white duration-[250ms]'></span>
             </button>
         </header>
     </>

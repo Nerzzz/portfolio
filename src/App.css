@@ -6,9 +6,10 @@
 @theme{
   --color-dark: #1a1b1f;
   --color-quote: #838383;
+  --color-cool-purple: #7d73bf;
   --font-poppins: "Poppins";
   --font-capital: "Lexend";
-  --drop-shadow-purple-neon: 0px 0px 16px #5144a6;
+  --drop-shadow-purple-neon: 0px 0px 8px #5144a6;
   --animate-wigle: wiggle 5s ease-in-out infinite;
 
   @keyframes wiggle {
