@@ -1,4 +1,3 @@
-import React from 'react'
 import cmdPng from "../images/Repeating_Command_Block_JE4_BE2.png";
 
 function Main() {
