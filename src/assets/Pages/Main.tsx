@@ -1,5 +1,4 @@
 import cmdPng from "../images/Repeating_Command_Block_JE4_BE2.png";
-import LinkToolTip from "../Components/LinkToolTip";
 
 function Main() {
   return (
