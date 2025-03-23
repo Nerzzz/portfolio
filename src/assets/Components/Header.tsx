@@ -3,7 +3,6 @@ function Header() {
   return (
     <>
         <header className='h-15 w-full flex items-center justify-end fixed left-0 top-0 z-40 pr-[15px] gap-[15px]'>
-            <input type="text" id="a" defaultValue={"Oi"}/>
             <a href="">
                 <span className='bi bi-github text-quote text-[15pt] hover:text-white duration-[250ms]'></span>
             </a>

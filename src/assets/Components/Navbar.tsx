@@ -1,19 +1,21 @@
-import { Link } from "react-router-dom";
+import LinkToolTip from "./LinkToolTip";
+import { useState } from 'react';
 
 function Navbar() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
   
   return (
-    <>
-        <button className='fixed md:hidden flex z-50 float-left bg-white mt-[15px] ml-[15px] w-[25px] h-[25px] items-center justify-center rounded-[5px]'><span className='bi bi-list text-black text-[15pt] font-bold'></span></button>
-        
-        <nav className='fixed h-[100vh] w-[50px] z-50 float-left pl-[15px] pt-[10px] md:block hidden'>
-            <ul className='grid gap-[25px] text-[18pt]'>
-                <li><Link to="/" title="Home"><span className='bi bi-house-fill text-quote hover:text-white duration-[250ms]'></span></Link></li>
-                <li><Link to="/Knowledge" title="technologies"><span className='bi bi-box text-quote hover:text-white duration-[250ms]'></span></Link></li>
-                <li><Link to="/Works" title="My Works"><span className='bi bi-person-workspace text-quote hover:text-white duration-[250ms]'></span></Link></li>
-                <li><Link to="/About" title="About Me"><span className='bi bi-person-arms-up text-quote hover:text-white duration-[250ms]'></span></Link></li>
-            </ul>
-        </nav>
+    <>        
+      <nav className='fixed h-[100vh] w-[50px] z-50 float-left pl-[15px] pt-[10px]'>
+        <button className={`${isMenuOpen ? 'bi bi-x' : 'bi bi-list'} md:hidden block text-white text-[24pt] mb-[10px] cursor-pointer`} onClick={() => setMenuOpen(!isMenuOpen)} />
+
+        <ul className={`md:grid md:gap-[25px] gap-[10px] md:text-[18pt] text-[12pt] ${isMenuOpen ? 'grid' : 'hidden'} w-fit p-[15px] pr-[35px] md:bg-transparent md:p-0 bg-gray-800 shadow-xl rounded `}>
+          <li onClick={() => setMenuOpen(!isMenuOpen)}><LinkToolTip path="/" icon="bi bi-house-fill" title="Home" subtitle="Go to home page, duh." /></li>
+          <li onClick={() => setMenuOpen(!isMenuOpen)}><LinkToolTip path="/Knowledge" icon="bi bi-book-fill" title="My Knowledge" subtitle="All my knowledge is here. Literaly"/></li>
+          <li onClick={() => setMenuOpen(!isMenuOpen)}><LinkToolTip path="/Works" icon="bi bi-hammer" title="My Projects" subtitle="There have much cool things here."/></li>
+          <li onClick={() => setMenuOpen(!isMenuOpen)}><LinkToolTip path="/About" icon="bi bi-person-arms-up" title="About Me" subtitle="Why not a page only for my 'persona'?."/></li>
+        </ul>
+      </nav>
     </>
   )
 }
